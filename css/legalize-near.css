@@ -1,0 +1,66 @@
+.legalize-near {
+  padding: 100px 0;
+}
+.legalize-block {
+  background: #e95404;
+  border-radius: 20px;
+  padding: 60px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.legalize-block h4 {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.legalize-block * {
+  color: #fafafa;
+  text-align: center;
+}
+.get-consult {
+  box-shadow: 0 4px 4px -1px rgba(12, 12, 13, 0.05),
+    0 4px 4px -1px rgba(12, 12, 13, 0.1);
+  background: #fafafa;
+  padding: 14px 24px;
+  color: #e95404;
+  max-width: 520px;
+  margin: 28px auto 0;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 24px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.get-consult:hover {
+  scale: 1.05;
+}
+
+@media only screen and (max-width: 900px) {
+  .legalize-near {
+    padding: 50px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .legalize-block {
+    padding: 30px 15px;
+    margin: 16px auto 0;
+  }
+
+  .get-consult {
+    font-size: 18px;
+    padding: 12px 12px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+    .legalize-block {
+    padding: 30px 10px;
+    margin: 16px auto 0;
+  }
+  .get-consult {
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 12px 7px;
+  }
+}

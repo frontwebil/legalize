@@ -1,0 +1,80 @@
+.our-clients {
+  padding: 120px 0;
+}
+
+/* SWPIER */
+
+.our-clients-swiper-card {
+  border: 1px solid rgba(30, 30, 30, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 413px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.our-clients-flex-line{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.our-clients-swiper-card * {
+  font-family: "Roboto";
+}
+
+.our-clients-swiper-card-text {
+  font-weight: 400;
+  font-size: 20px;
+}
+.our-clients-swiper-card-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(30, 30, 30, 0.1);
+}
+.our-clients-swiper-card-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.our-clients-swiper-card-info img {
+  max-width: 62px;
+}
+.our-clients-swiper-card-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.our-clients-swiper-card-info-text h4 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #e95404;
+}
+
+.our-clients-swiper-card-info-text p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  color: #1e1e1e99;
+}
+
+@media only screen and (max-width: 900px) {
+.our-clients {
+padding: 50px 0;
+}
+  .our-clients-swiper-card-text{
+    font-size: 16px;
+  }
+  .our-clients-swiper-card-info-text h4{
+    font-size: 18px;
+  }
+  .our-clients-swiper-card{
+    gap: 10px;
+  }
+  .our-clients-swiper-card-info-text p{
+    font-size: 14px;
+  }
+}

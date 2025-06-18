@@ -1,0 +1,107 @@
+.text-m {
+  font-size: 18px;
+}
+
+.text-l {
+  font-size: 20px;
+}
+
+.text-xl {
+  font-size: 24px;
+}
+
+.text-xxl {
+  font-size: 28px;
+}
+
+.text-xxxl {
+  font-size: 32px;
+}
+
+.bold500 {
+  font-weight: 500;
+}
+
+.bold600 {
+  font-weight: 600;
+}
+
+.bold700 {
+  font-weight: 700;
+}
+
+.section-header {
+  max-width: 630px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-subTitle {
+  color: #00000080;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-small {
+  max-width: 1104px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media only screen and (max-width: 600px) {
+  .section-title{
+    font-size: 28px;
+  }
+  .text-xxxl {
+    font-size: 28px;
+  }
+  .text-xxl {
+    font-size: 24px;
+  }
+  .text-m {
+    font-size: 14px;
+  }
+  .text-xl {
+    font-size: 20px;
+  }
+  .text-l {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .section-title{
+    font-size: 22px;
+  }
+    .text-xxl {
+    font-size: 20px;
+  }
+  .text-xxxl {
+    font-size: 18px;
+  }
+  .text-xl {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+    .section-title{
+    font-size: 20px;
+  }
+    .text-l {
+    font-size: 14px;
+  }
+}

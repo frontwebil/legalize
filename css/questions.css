@@ -1,0 +1,108 @@
+.questions {
+  padding: 120px 0;
+  background: #f3f3f3;
+}
+
+.icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon span {
+  position: absolute;
+  background-color: #000000;
+  transition: transform 0.3s ease;
+}
+
+.horizontal {
+  width: 22px;
+  height: 3px;
+  border-radius: 5px;
+}
+
+.vertical {
+  width: 3px;
+  height: 22px;
+  border-radius: 5px;
+}
+
+/* Анимация превращения в минус */
+.icon.active .vertical {
+  transform: rotate(90deg);
+}
+
+.icon.active .horizontal {
+  transform: rotate(0deg);
+}
+
+.accordeon {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.accordeon * {
+  transition: all ease 0.3s;
+}
+
+.accordeon-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.accordeon-item {
+  max-width: 620px;
+  width: 100%;
+  background: #0000000d;
+  border-radius: 20px;
+  padding: 15px 20px;
+}
+.accordeon-item-top-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordeon-content {
+  /* padding-top: 10px; */
+  overflow: hidden;
+  max-height: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .questions {
+    padding: 50px 0;
+  }
+  .accordeon {
+    flex-direction: column;
+  }
+  .accordeon-item {
+    max-width: 100%;
+  }
+  .icon {
+    max-width: 30px !important;
+    width: 100% !important;
+    height: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .horizontal {
+    width: 15px !important;
+    height: 3px;
+    border-radius: 5px;
+  }
+
+  .vertical {
+    width: 3px;
+    height: 15px !important;
+    border-radius: 5px;
+  }
+}

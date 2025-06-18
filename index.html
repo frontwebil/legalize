@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="images/logo.svg" />
+    <title>Легализация в ЕС</title>
+  </head>
+
+  <body>
+    <div class="modalConsultating" id="modalConsultating">
+      <div class="modalConsultating-container">
+        <div class="modalConsultating-top">
+          <h2 class="text-xxl bold700">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</h2>
+          <img
+            src="images/icons/close.svg"
+            alt=""
+            class="cart-menu-top-image"
+            id="closeModalConsultating"
+          />
+        </div>
+        <p class="text-l">
+          Оставьте заявку, и наш менеджер свяжется с вами на протяжении 24
+          часов.
+        </p>
+        <div class="form-container">
+          <form id="modalForm" class="modalForm">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="name" class="fs-s bold700">Имя</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Введите ваше имя"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="fs-s bold700">Email</label>
+                <input
+                  type="Email"
+                  id="Email"
+                  name="Email"
+                  placeholder="example@gmail.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="request" class="fs-s bold700">Запрос</label>
+              <textarea
+                п
+                id="request"
+                name="request"
+                placeholder="Кратко опишите, с каким вопросом вы обращаетесь"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="modalButtonCons">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modalTahnkYou" id="modalTahnkYou">
+      <div class="modalTahnkYou-container">
+        <h2 class="text-xxl bold700">ЗАЯВКА УСПЕШНО ОТПРАВЛЕНА</h2>
+        <p class="text-l">
+          Спасибо! Мы свяжемся с вами на протяжении 24 часов.
+        </p>
+        <a href="/" class="modalButtonCons">Закрыть</a>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <nav class="header-nav">
+          <a href="#services" class="text-m bold600">Услуги</a>
+          <a href="#etaps" class="text-m bold600">Этапы работы</a>
+          <a href="#why-choose" class="text-m bold600">Про нас</a>
+          <a href="#testimonial" class="text-m bold600">Отзывы</a>
+        </nav>
+        <img src="images/logo.svg" alt="" class="header-logo" />
+        <div class="header-contact-us">
+          <a href="#" class="header-call-phone">
+            <img
+              src="images/icons/Phone.svg"
+              alt=""
+              class="header-call-phone-img"
+            />
+            <p class="header-call-phone-text text-m bold600">+000 000 0000</p>
+          </a>
+          <div class="contact-us-button openModal">Бесплатная консультация</div>
+          <div class="custom-burger">
+            <div class="custom-line"></div>
+            <div class="custom-line"></div>
+            <div class="custom-line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sliding-menu">
+        <nav class="sliding-menu-nav">
+          <a href="#services" class="text-m bold600 nav-mobile-links">Услуги</a>
+          <a href="#etaps" class="text-m bold600 nav-mobile-links"
+            >Этапы работы</a
+          >
+          <a href="#why-choose" class="text-m bold600 nav-mobile-links"
+            >Про нас</a
+          >
+          <a href="#testimonial" class="text-m bold600 nav-mobile-links"
+            >Отзывы</a
+          >
+        </nav>
+        <div class="contact-us-button-mobile openModal">
+          Бесплатная консультация
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <h1 class="hero-Title">
+            Легализация в ЕС — Просто. Законно. Под ключ.
+          </h1>
+          <h2 class="hero-subTitle">
+            ВНЖ, ПМЖ, гражданство, бизнес-иммиграция — полный комплекс услуг для
+            вашего легального статуса в Европе.
+          </h2>
+          <p class="hero-contact-us openModal">Бесплатная консультация</p>
+        </div>
+        <div class="hero-info">
+          <div class="test">
+            <div class="hero-info-block">
+              <h3 class="hero-info-block-title">10+</h3>
+              <p class="hero-info-block-text">стран ЕС</p>
+            </div>
+            <div class="hero-info-block">
+              <h3 class="hero-info-block-title">500+</h3>
+              <p class="hero-info-block-text">успешных кейсов</p>
+            </div>
+          </div>
+          <div class="test">
+            <div class="hero-info-block">
+              <h3 class="hero-info-block-title">7 лет</h3>
+              <p class="hero-info-block-text">опыта</p>
+            </div>
+            <div class="hero-info-block">
+              <h3 class="hero-info-block-title">Специалисты</h3>
+              <p class="hero-info-block-text">Сертифицированные юристы</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our-service" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Наши услуги</h3>
+          <h3 class="section-subTitle">
+            Всё для вашей легализации в ЕС — в одном месте
+          </h3>
+        </div>
+        <div class="our-service-flex">
+          <a href="#" class="our-service-block">
+            <img
+              src="images/OurServices/1.png"
+              alt=""
+              class="our-service-block-img"
+            />
+            <div class="our-service-block-text">
+              <h2 class="our-service-block-title text-xl">ВНЖ</h2>
+              <p class="our-service-block-subTitle text-l">по работе</p>
+            </div>
+          </a>
+          <a href="#" class="our-service-block">
+            <img
+              src="images/OurServices/2.png"
+              alt=""
+              class="our-service-block-img"
+            />
+            <div class="our-service-block-text">
+              <h2 class="our-service-block-title text-xl">ВНЖ</h2>
+              <p class="our-service-block-subTitle text-l">по корням</p>
+            </div>
+          </a>
+          <a href="#" class="our-service-block">
+            <img
+              src="images/OurServices/3.png"
+              alt=""
+              class="our-service-block-img"
+            />
+            <div class="our-service-block-text">
+              <h2 class="our-service-block-title text-xl">ВНЖ</h2>
+              <p class="our-service-block-subTitle text-l">по бизнесу</p>
+            </div>
+          </a>
+          <a href="#" class="our-service-block">
+            <img
+              src="images/OurServices/4.png"
+              alt=""
+              class="our-service-block-img"
+            />
+            <div class="our-service-block-text">
+              <h2 class="our-service-block-title text-xl">ВНЖ</h2>
+              <p class="our-service-block-subTitle text-l">по учёбе</p>
+            </div>
+          </a>
+          <a href="#" class="our-service-block">
+            <img
+              src="images/OurServices/5.png"
+              alt=""
+              class="our-service-block-img"
+            />
+            <div class="our-service-block-text">
+              <h2 class="our-service-block-title text-xl">ПМЖ</h2>
+              <p class="our-service-block-subTitle text-l">
+                Долгосрочное резиденство
+              </p>
+            </div>
+          </a>
+          <a href="#" class="our-service-block">
+            <img
+              src="images/OurServices/6.png"
+              alt=""
+              class="our-service-block-img"
+            />
+            <div class="our-service-block-text">
+              <h2 class="our-service-block-title text-xl">Гражданство ЕС</h2>
+              <p class="our-service-block-subTitle text-l">по бизнесу</p>
+            </div>
+          </a>
+          <a href="#" class="our-service-block">
+            <img
+              src="images/OurServices/7.png"
+              alt=""
+              class="our-service-block-img"
+            />
+            <div class="our-service-block-text">
+              <h2 class="our-service-block-title text-xl">
+                Семейное воссоединение
+              </h2>
+            </div>
+          </a>
+          <a href="#" class="our-service-block">
+            <img
+              src="images/OurServices/8.png"
+              alt=""
+              class="our-service-block-img"
+            />
+            <div class="our-service-block-text">
+              <h2 class="our-service-block-title text-xl">
+                Регистрация бизнеса
+              </h2>
+              <p class="our-service-block-subTitle text-l">в ЕС</p>
+            </div>
+          </a>
+          <a href="#" class="our-service-block">
+            <img
+              src="images/OurServices/9.png"
+              alt=""
+              class="our-service-block-img"
+            />
+            <div class="our-service-block-text">
+              <h2 class="our-service-block-title text-xl">
+                Юридическая поддержка
+              </h2>
+            </div>
+          </a>
+        </div>
+        <a href="#" class="our-service-more-button">
+          <p class="text-l">Узнать подробности</p>
+          <img src="images/icons/ArrowUpRight.svg" alt="" />
+        </a>
+      </div>
+    </section>
+    <section class="country">
+      <div class="section-header">
+        <h3 class="section-title">
+          Страны, в которых мы предоставляем услуги:
+        </h3>
+      </div>
+      <div class="country-container">
+        <div class="country-block">
+          <img
+            src="/images/Flags/pl.svg"
+            alt="Польша"
+            class="country-block-img"
+          />
+          <p class="text-xl">Польша</p>
+        </div>
+        <div class="country-block">
+          <img
+            src="/images/Flags/at.svg"
+            alt="Австрия"
+            class="country-block-img"
+          />
+          <p class="text-xl">Австрия</p>
+        </div>
+        <div class="country-block">
+          <img
+            src="/images/Flags/hu.svg"
+            alt="Австрия"
+            class="country-block-img"
+          />
+          <p class="text-xl">Венгрия</p>
+        </div>
+        <div class="country-block">
+          <img
+            src="/images/Flags/sl.svg"
+            alt="Австрия"
+            class="country-block-img"
+          />
+          <p class="text-xl">Словения</p>
+        </div>
+        <div class="country-block">
+          <img
+            src="/images/Flags/es.svg"
+            alt="Австрия"
+            class="country-block-img"
+          />
+          <p class="text-xl">Испания</p>
+        </div>
+        <div class="country-block">
+          <img
+            src="/images/Flags/uk.svg"
+            alt="Австрия"
+            class="country-block-img"
+          />
+          <p class="text-xl">Великобритания</p>
+        </div>
+        <div class="country-block">
+          <img
+            src="/images/Flags/de.svg"
+            alt="Австрия"
+            class="country-block-img"
+          />
+          <p class="text-xl">Германия</p>
+        </div>
+      </div>
+    </section>
+    <section class="road-to-legalize" id="etaps">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Как проходит ваш путь к легализации</h3>
+        </div>
+        <div class="road-to-legalize-top-line">
+          <div class="road-to-legalize-top-line-block"></div>
+          <div class="road-to-legalize-top-line-block"></div>
+          <div class="road-to-legalize-top-line-block"></div>
+          <div class="road-to-legalize-top-line-block"></div>
+        </div>
+        <div class="road-to-legalize-steps">
+          <div class="road-to-legalize-steps-mobile">
+            <div class="road-to-legalize-steps-block">
+              <div class="circle"></div>
+              <h3 class="text-xl">ЕТАП 1.</h3>
+              <p class="text-l">
+                <span class="bold700">Консультация.</span> Определим ваши шансы
+                и подберем программу
+              </p>
+            </div>
+            <div class="road-to-legalize-steps-block">
+              <div class="circle"></div>
+              <h3 class="text-xl">ЕТАП 2.</h3>
+              <p class="text-l">
+                <span class="bold700">Документы.</span> Подготовим весь пакет
+                под требования законодательства
+              </p>
+            </div>
+          </div>
+          <div class="road-to-legalize-steps-mobile">
+            <div class="road-to-legalize-steps-block">
+              <div class="circle"></div>
+              <h3 class="text-xl">ЕТАП 3.</h3>
+              <p class="text-l">
+                <span class="bold700">Подача и сопровождение.</span> Полное
+                сопровождение на каждом этапе
+              </p>
+            </div>
+            <div class="road-to-legalize-steps-block">
+              <div class="circle"></div>
+              <h3 class="text-xl">ЕТАП 4.</h3>
+              <p class="text-l">
+                <span class="bold700">Результат.</span> Получение статуса и
+                поддержка после
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-choose-us" id="why-choose">
+      <div class="container-small">
+        <img
+          src="images/why-choose/main.png"
+          alt=""
+          class="why-choose-us-mainImage"
+        />
+        <img
+          src="images/why-choose/main-mobile.png"
+          alt=""
+          class="why-choose-us-mainImage mobile"
+        />
+        <div class="why-choose-us-content">
+          <h3 class="text-xxxl bold700">
+            ПОЧЕМУ ВЫБИРАЮТ <span style="color: #e95404">НАС</span>
+          </h3>
+          <h4 class="text-xxl">
+            <span class="bold700">5 причин</span> работать с MigrantService:
+          </h4>
+          <div class="why-choose-us-content-rows">
+            <div class="why-choose-us-content-row">
+              <div class="why-choose-us-content-icon">
+                <img src="images/icons/Star.svg" alt="" />
+              </div>
+              <p class="text-l">
+                <span class="bold700">7 лет опыта</span> в миграционных услугах
+              </p>
+            </div>
+            <div class="why-choose-us-content-row">
+              <div class="why-choose-us-content-icon">
+                <img src="images/icons/ThumbsUp.svg" alt="" />
+              </div>
+              <p class="text-l">
+                <span class="bold700">Гарантия результата</span>
+                — прописанная в договоре
+              </p>
+            </div>
+            <div class="why-choose-us-content-row">
+              <div class="why-choose-us-content-icon">
+                <img src="images/icons/UserCircle.svg" alt="" />
+              </div>
+              <p class="text-l">
+                <span class="bold700">Индивидуальный подход</span>
+                к каждому клиенту
+              </p>
+            </div>
+            <div class="why-choose-us-content-row">
+              <div class="why-choose-us-content-icon">
+                <img src="images/icons/Handshake.svg" alt="" />
+              </div>
+              <p class="text-l">
+                <span class="bold700">Полное сопровождение</span>
+                от заявки до получения статуса
+              </p>
+            </div>
+            <div class="why-choose-us-content-row">
+              <div class="why-choose-us-content-icon">
+                <img src="images/icons/File.svg" alt="" />
+              </div>
+              <p class="text-l">
+                <span class="bold700"
+                  >Юридическая защита и конфиденциальность данных</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our-clients" id="testimonial">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Наши клиенты — наши лучшие рекомендации</h3>
+        </div>
+        <div class="swiper-slides testimonial">
+          <!--       
+      <div class="our-clients-swiper-card">
+        <p class="our-clients-swiper-card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna
+        </p>
+        <div class="our-clients-swiper-card-line"></div>
+        <div class="our-clients-swiper-card-info">
+          <img src="/images/our-clients/1.png" alt="">
+          <div class="our-clients-swiper-card-info-text">
+            <h4>Иван, 32 года</h4>
+            <p>ВНЖ в Польше за 2 месяца через бизнес-иммиграцию.</p>
+          </div>
+        </div>
+      </div>
+      -->
+        </div>
+        <div class="controls-swiper-slides">
+          <button class="controls-swiper-prev testimonial-control-prev">
+            <img src="images/icons/control-left.svg" alt="" />
+          </button>
+          <div class="indicators-swiper testimonial-indicator"></div>
+          <button class="controls-swiper-next testimonial-control-next">
+            <img src="images/icons/control-right.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container-small">
+        <div class="section-header">
+          <h3 class="section-title">Часто задаваемые вопросы</h3>
+        </div>
+        <div class="accordeon">
+          <div class="accordeon-column">
+            <div class="accordeon-item">
+              <div class="accordeon-item-top-button">
+                <p class="text-l bold600">
+                  Сколько времени занимает получение ВНЖ?
+                </p>
+                <div class="icon">
+                  <span class="horizontal"></span>
+                  <span class="vertical"></span>
+                </div>
+              </div>
+              <div class="accordeon-content text-m">
+                От 3 до 6 месяцев, в зависимости от воеводства и типа основания.
+                Иногда — дольше из-за перегруженности ужендов.
+              </div>
+            </div>
+            <div class="accordeon-item">
+              <div class="accordeon-item-top-button">
+                <p class="text-l bold600">
+                  Какие документы нужны для воссоединения семьи?
+                </p>
+                <div class="icon">
+                  <span class="horizontal"></span>
+                  <span class="vertical"></span>
+                </div>
+              </div>
+              <div class="accordeon-content text-m">
+                Паспорт <br /><br />
+
+                Документ, подтверждающий родство (свидетельство о
+                браке/рождении) <br /><br />
+
+                Подтверждение легального пребывания приглашающей стороны
+                <br /><br />
+
+                Доход и жильё в Польше <br /><br />
+
+                Страховка
+              </div>
+            </div>
+            <div class="accordeon-item">
+              <div class="accordeon-item-top-button">
+                <p class="text-l bold600">Какие гарантии вы даете?</p>
+                <div class="icon">
+                  <span class="horizontal"></span>
+                  <span class="vertical"></span>
+                </div>
+              </div>
+              <div class="accordeon-content text-m">
+                Гарантируем полное сопровождение, подготовку документов и подачу
+                без ошибок. Решение остаётся за ужендом.
+              </div>
+            </div>
+          </div>
+          <div class="accordeon-column">
+            <div class="accordeon-item">
+              <div class="accordeon-item-top-button">
+                <p class="text-l bold600">
+                  Нужен ли язык для подачи на гражданство?
+                </p>
+                <div class="icon">
+                  <span class="horizontal"></span>
+                  <span class="vertical"></span>
+                </div>
+              </div>
+              <div class="accordeon-content text-m">
+                Да. Требуется сертификат знания польского языка не ниже уровня
+                B1 (государственный экзамен).
+              </div>
+            </div>
+            <div class="accordeon-item">
+              <div class="accordeon-item-top-button">
+                <p class="text-l bold600">
+                  Как вы обеспечиваете безопасность моих данных?
+                </p>
+                <div class="icon">
+                  <span class="horizontal"></span>
+                  <span class="vertical"></span>
+                </div>
+              </div>
+              <div class="accordeon-content text-m">
+                Соблюдаем нормы GDPR. Все данные хранятся на защищённых
+                серверах, используются только с вашего согласия.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="more-possibilities">
+      <div class="container-small">
+        <div class="section-header">
+          <h3 class="section-title">
+            Больше возможностей для вашей легализации
+          </h3>
+        </div>
+        <div class="more-possibilities-content">
+          <div class="more-possibilities-content-text">
+            <h3 class="text-xxl bold700">Дополнительные услуги</h3>
+            <div class="more-possibilities-content-text-column">
+              <div class="more-possibilities-content-row">
+                <div class="more-possibilities-content-circle"></div>
+                <p class="text-l">
+                  <span class="bold700">Прописка и номер</span> PESEL в Польше
+                </p>
+              </div>
+              <div class="more-possibilities-content-row">
+                <div class="more-possibilities-content-circle"></div>
+                <p class="text-l">
+                  Оформление <span class="bold700">виз</span> в ЕС
+                </p>
+              </div>
+              <div class="more-possibilities-content-row">
+                <div class="more-possibilities-content-circle"></div>
+                <p class="text-l">
+                  <span class="bold700">Юридические</span> услуги
+                </p>
+              </div>
+              <div class="more-possibilities-content-row">
+                <div class="more-possibilities-content-circle"></div>
+                <p class="text-l">
+                  <span class="bold700">Переводы и легализация</span> документов
+                </p>
+              </div>
+              <div class="more-possibilities-content-row">
+                <div class="more-possibilities-content-circle"></div>
+                <p class="text-l">
+                  <span class="bold700">Получение документов</span> из Украины и
+                  России
+                </p>
+              </div>
+            </div>
+          </div>
+          <img src="/images/more-pos/main.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="legalize-near">
+      <div class="container-small">
+        <div class="legalize-block">
+          <h3 class="text-xxxl bold700">
+            Легализация в ЕС — ближе, чем кажется
+          </h3>
+          <h4 class="text-xl bold600">
+            Оставьте заявку — мы предложим вам лучший путь легализации уже
+            сегодня!
+          </h4>
+          <div class="get-consult bold700 openModal">
+            Получить бесплатную консультацию
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container footer">
+        <div class="footer-left">
+          <img src="/images/Footer/logo.svg" alt="" />
+          <div class="footer-left-columns">
+            <div class="footer-left-column">
+              <a href="#services" class="text-m bold600">Услуги</a>
+              <a href="#etaps" class="text-m bold600">Этапы работы</a>
+              <a href="#why-choose" class="text-m bold600">Про нас</a>
+              <a href="#testimonial" class="text-m bold600">Отзывы</a>
+            </div>
+            <div class="footer-left-column">
+              <p class="text-m bold700">Контакты</p>
+              <a href="tel:+48795664765" class="text-m bold600 contacts-flex"
+                ><img src="images/Footer/Phone.svg" alt="" />
+                <p>+ 4879 566 4765</p>
+              </a>
+              <a
+                href="mailto:info@imigrant-service.com"
+                class="text-m bold600 contacts-flex"
+                ><img src="images/Footer/Mail.svg" alt="" />
+                <p>info@imigrant-service.com</p>
+              </a>
+              <a href="#" class="text-m bold600 contacts-flex"
+                ><img src="images/Footer/House.svg" alt="" />
+                <p>Адрес</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-socials">
+            <!-- <a href="https://wa.me/48795664765">
+            <img src="/images/Footer/InstagramLogo.svg" alt="" class="footer-right-socials-icon">
+          </a>
+          <a href="https://wa.me/48795664765">
+            <img src="/images/Footer/ViberLogo.svg" alt="" class="footer-right-socials-icon">
+          </a> -->
+            <a href="https://wa.me/48795664765">
+              <img
+                src="/images/Footer/WhatsappLogo.svg"
+                alt=""
+                class="footer-right-socials-icon"
+              />
+            </a>
+            <!-- <a href="https://wa.me/48795664765">
+            <img src="/images/Footer/TelegramLogo.svg" alt="" class="footer-right-socials-icon">
+          </a> -->
+          </div>
+          <div class="footer-right-opt">
+            <a href="#" class="text-m">Политика конфиденциальности</a>
+            <a href="#" class="text-m">Условия использования</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
