@@ -1,0 +1,24 @@
+.employment-assistance {
+  padding: 120px 0;
+}
+.employment-assistance-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+.employment-assistance-content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.employment-assistance-content-text h2{
+  text-transform: uppercase;
+}
+.employment-assistance-content-text p{
+  padding-top: 12px;
+}
+.employment-assistance-content-img {
+  max-width: 415px;
+  object-fit: cover;
+}

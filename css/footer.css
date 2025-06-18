@@ -63,6 +63,10 @@ footer * {
   display: flex;
 }
 
+.footer-right-opt {
+  text-align: end;
+}
+
 .footer-right-socials-icon:hover {
   scale: 1.1;
 }

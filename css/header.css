@@ -13,7 +13,7 @@ header .container {
   align-items: center;
 }
 .header-nav {
-  max-width: 503px;
+  max-width: 526px;
   width: 100%;
   display: flex;
   justify-content: space-between;
