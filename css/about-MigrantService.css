@@ -1,0 +1,23 @@
+.about-MigrantService {
+  padding: 60px 0;
+  background: #f3f3f3;
+}
+.about-MigrantService .container-small {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.about-MigrantService-text {
+  max-width: 630px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.about-MigrantService-text h3 {
+  text-align: start;
+}
+
+.about-MigrantService-img {
+  max-width: 415px;
+}

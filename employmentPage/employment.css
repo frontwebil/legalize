@@ -13,6 +13,9 @@
 @import url("/css/modal.css");
 @import url("/css/employment-assistance.css");
 @import url("/css/why-choose-migrantService.css");
+@import url("/css/your-benefits.css");
+@import url("/css/our-guarantees.css");
+@import url("/css/about-MigrantService.css");
 
 * {
   font-family: "Open Sans", sans-serif;

@@ -1,0 +1,39 @@
+.your-benefits {
+  padding: 120px 0;
+}
+.your-benefits-content {
+  display: flex;
+  justify-content: space-between;
+}
+.your-benefits-content-text {
+}
+.your-benefits-content-text h3 {
+  text-align: left;
+  max-width: 340px;
+}
+.your-benefits-content-cards {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 850px;
+}
+.your-benefits-content-card {
+  max-width: 410px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0 4px 4px -1px rgba(12, 12, 13, 0.05),
+    0 4px 4px -1px rgba(12, 12, 13, 0.1);
+  background-color: #fafafa;
+}
+.your-benefits-content-card-icon {
+}
+.text-xl {
+}
+.bold600 {
+}
+.your-benefits-content-img {
+}
