@@ -21,3 +21,15 @@
 .about-MigrantService-img {
   max-width: 415px;
 }
+
+@media only screen and (max-width: 900px) {
+  .about-MigrantService .container-small {
+    flex-direction: column-reverse;
+  }
+  .about-MigrantService-img {
+    max-width: 630px;
+    width: 100%;
+    object-fit: fill;
+    max-height: 400px;
+  }
+}

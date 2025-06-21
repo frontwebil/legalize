@@ -78,8 +78,20 @@
   gap: 20px;
   justify-content: space-between;
   align-items: center;
+  /* flex-wrap: wrap; */
 }
+
+.real-clients-swiper-card img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 .real-clients-swiper-card-text {
+  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -88,5 +100,27 @@
 @media only screen and (max-width: 1265px) {
   .controls-swiper-slides {
     max-width: 846px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .real-clients-swiper-card img {
+    max-width: 250px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .real-clients-swiper-card {
+    flex-direction: column; 
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .real-clients-swiper-card img {
+    max-width: 100%;
+    max-height: 300px;
+    width: 100%;
+    object-fit: fill;
   }
 }

@@ -1,536 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="employmentPage/employment.css" />
-    <link rel="icon" href="images/logo.svg" />
-    <title>Employment in the EU</title>
-  </head>
 
-  <body>
-    <div class="modalConsultating" id="modalConsultating">
-      <div class="modalConsultating-container">
-        <div class="modalConsultating-top">
-          <h2 class="text-xxl bold700">BOOK A CONSULTATION</h2>
-          <img
-            src="images/icons/close.svg"
-            alt=""
-            class="cart-menu-top-image"
-            id="closeModalConsultating"
-          />
-        </div>
-        <p class="text-l">
-          Leave a request and our manager will contact you within 24 hours.
-        </p>
-        <div class="form-container">
-          <form id="modalForm" class="modalForm">
-            <div class="form-group-row">
-              <div class="form-group">
-                <label for="name" class="fs-s bold700">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your name"
-                  required
-                />
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="employmentPage/employment.css" />
+  <link rel="icon" href="images/logo.svg" />
+  <title>Employment in the EU</title>
+</head>
 
-              <div class="form-group">
-                <label for="phone" class="fs-s bold700">Email</label>
-                <input
-                  type="Email"
-                  id="Email"
-                  name="Email"
-                  placeholder="example@gmail.com"
-                  required
-                />
-              </div>
+<body>
+  <div class="modalConsultating" id="modalConsultating">
+    <div class="modalConsultating-container">
+      <div class="modalConsultating-top">
+        <h2 class="text-xxl bold700">BOOK A CONSULTATION</h2>
+        <img src="images/icons/close.svg" alt="" class="cart-menu-top-image" id="closeModalConsultating" />
+      </div>
+      <p class="text-l">
+        Leave a request and our manager will contact you within 24 hours.
+      </p>
+      <div class="form-container">
+        <form id="modalForm" class="modalForm">
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="name" class="fs-s bold700">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required />
             </div>
 
             <div class="form-group">
-              <label for="request" class="fs-s bold700">Request</label>
-              <textarea
-                п
-                id="request"
-                name="request"
-                placeholder="Briefly describe your question or issue"
-                required
-              ></textarea>
+              <label for="phone" class="fs-s bold700">Email</label>
+              <input type="Email" id="Email" name="Email" placeholder="example@gmail.com" required />
             </div>
+          </div>
 
-            <button type="submit" class="modalButtonCons">Submit</button>
-          </form>
+          <div class="form-group">
+            <label for="request" class="fs-s bold700">Request</label>
+            <textarea п id="request" name="request" placeholder="Briefly describe your question or issue"
+              required></textarea>
+          </div>
+
+          <button type="submit" class="modalButtonCons">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modalTahnkYou" id="modalTahnkYou">
+    <div class="modalTahnkYou-container">
+      <h2 class="text-xxl bold700">REQUEST SUCCESSFULLY SENT</h2>
+      <p class="text-l">Thank you! We will contact you within 24 hours.</p>
+      <a href="/" class="modalButtonCons">Close</a>
+    </div>
+  </div>
+  <header>
+    <div class="container">
+      <nav class="header-nav" style="max-width: 421px">
+        <a href="#services" class="text-m bold600">Service</a>
+        <a href="#etaps" class="text-m bold600">Work stages</a>
+        <a href="#why-choose" class="text-m bold600">About us</a>
+        <a href="#testimonial" class="text-m bold600">Reviews</a>
+      </nav>
+      <img src="images/logo.svg" alt="" class="header-logo" />
+      <div class="header-contact-us">
+        <a href="#" class="header-call-phone">
+          <img src="images/icons/Phone.svg" alt="" class="header-call-phone-img" />
+          <p class="header-call-phone-text text-m bold600">+4879 566 4765</p>
+        </a>
+        <div class="contact-us-button openModal">Free Consultation</div>
+        <div class="custom-burger">
+          <div class="custom-line"></div>
+          <div class="custom-line"></div>
+          <div class="custom-line"></div>
         </div>
       </div>
     </div>
-    <div class="modalTahnkYou" id="modalTahnkYou">
-      <div class="modalTahnkYou-container">
-        <h2 class="text-xxl bold700">REQUEST SUCCESSFULLY SENT</h2>
-        <p class="text-l">Thank you! We will contact you within 24 hours.</p>
-        <a href="/" class="modalButtonCons">Close</a>
-      </div>
+    <div class="sliding-menu">
+      <nav class="sliding-menu-nav">
+        <a href="#services" class="text-m bold600 nav-mobile-links">Service</a>
+        <a href="#etaps" class="text-m bold600 nav-mobile-links">Work stages</a>
+        <a href="#why-choose" class="text-m bold600 nav-mobile-links">About us</a>
+        <a href="#testimonial" class="text-m bold600 nav-mobile-links">Reviews</a>
+      </nav>
+      <div class="contact-us-button-mobile openModal">Free Consultation</div>
     </div>
-    <header>
-      <div class="container">
-        <nav class="header-nav" style="max-width: 421px">
-          <a href="#services" class="text-m bold600">Service</a>
-          <a href="#etaps" class="text-m bold600">Work stages</a>
-          <a href="#why-choose" class="text-m bold600">About us</a>
-          <a href="#testimonial" class="text-m bold600">Reviews</a>
-        </nav>
-        <img src="images/logo.svg" alt="" class="header-logo" />
-        <div class="header-contact-us">
-          <a href="#" class="header-call-phone">
-            <img
-              src="images/icons/Phone.svg"
-              alt=""
-              class="header-call-phone-img"
-            />
-            <p class="header-call-phone-text text-m bold600">+4879 566 4765</p>
-          </a>
-          <div class="contact-us-button openModal">Free Consultation</div>
-          <div class="custom-burger">
-            <div class="custom-line"></div>
-            <div class="custom-line"></div>
-            <div class="custom-line"></div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1 class="hero-Title">
+          Employment in the EU — Full-Service Legal Support
+        </h1>
+        <h2 class="hero-subTitle">
+          We help you secure legal employment in Europe quickly, reliably, and
+          through trusted employers.
+        </h2>
+        <p class="hero-contact-us openModal">Free Consultation</p>
+      </div>
+      <div class="hero-info">
+        <div class="test">
+          <div class="hero-info-block">
+            <h3 class="hero-info-block-title">7 years</h3>
+            <p class="hero-info-block-text">of experience</p>
+          </div>
+          <div class="hero-info-block">
+            <h3 class="hero-info-block-title">500+</h3>
+            <p class="hero-info-block-text">successful cases</p>
+          </div>
+        </div>
+        <div class="test">
+          <div class="hero-info-block">
+            <h3 class="hero-info-block-title">Active in</h3>
+            <p class="hero-info-block-text">10+ EU countries</p>
+          </div>
+          <div class="hero-info-block">
+            <h3 class="hero-info-block-title">Specialists</h3>
+            <p class="hero-info-block-text">Certified Lawyers</p>
           </div>
         </div>
       </div>
-      <div class="sliding-menu">
-        <nav class="sliding-menu-nav">
-          <a href="#services" class="text-m bold600 nav-mobile-links"
-            >Service</a
-          >
-          <a href="#etaps" class="text-m bold600 nav-mobile-links"
-            >Work stages</a
-          >
-          <a href="#why-choose" class="text-m bold600 nav-mobile-links"
-            >About us</a
-          >
-          <a href="#testimonial" class="text-m bold600 nav-mobile-links"
-            >Reviews</a
-          >
-        </nav>
-        <div class="contact-us-button-mobile openModal">Free Consultation</div>
+    </div>
+  </section>
+  <section class="employment-assistance">
+    <div class="container-small">
+      <div class="section-header">
+        <h3 class="section-title">
+          What is EU Employment Assistance
+          <span>and Who It’s For</span>
+        </h3>
       </div>
-    </header>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-text">
-          <h1 class="hero-Title">
-            Employment in the EU — Full-Service Legal Support
-          </h1>
-          <h2 class="hero-subTitle">
-            We help you secure legal employment in Europe quickly, reliably, and
-            through trusted employers.
+
+      <div class="employment-assistance-content">
+        <div class="employment-assistance-content-text">
+          <h2 class="text-xl bold700">
+            MigrantService supports foreign nationals in securing legal
+            employment in EU countries.
           </h2>
-          <p class="hero-contact-us openModal">Free Consultation</p>
+          <h4 class="text-xl bold600">
+            We work with verified agencies and directly with employers under
+            official employment contracts.
+          </h4>
+          <p class="text-l">
+            Main destinations include Germany, the Netherlands, Czech
+            Republic, Poland, and Hungary. The service is available for
+            citizens of any country. Job offers require basic knowledge of
+            English or Russian.
+          </p>
         </div>
-        <div class="hero-info">
-          <div class="test">
-            <div class="hero-info-block">
-              <h3 class="hero-info-block-title">7 years</h3>
-              <p class="hero-info-block-text">of experience</p>
-            </div>
-            <div class="hero-info-block">
-              <h3 class="hero-info-block-title">500+</h3>
-              <p class="hero-info-block-text">successful cases</p>
-            </div>
-          </div>
-          <div class="test">
-            <div class="hero-info-block">
-              <h3 class="hero-info-block-title">Active in</h3>
-              <p class="hero-info-block-text">10+ EU countries</p>
-            </div>
-            <div class="hero-info-block">
-              <h3 class="hero-info-block-title">Specialists</h3>
-              <p class="hero-info-block-text">Certified Lawyers</p>
-            </div>
-          </div>
+        <img src="images/employment-assistance/main-mobile.png" alt="" class="employment-assistance-content-img-mobile">
+        <img src="images/employment-assistance/main.png" alt="" class="employment-assistance-content-img" />
+      </div>
+    </div>
+  </section>
+  <section class="why-choose-migrantService">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-title">
+          Why Choose MigrantService for EU Employment
+        </h3>
+      </div>
+      <div class="why-choose-migrantService-content">
+        <div class="why-choose-migrantService-content-card">
+          <h3 class="text-xl bold700">Personal consultation</h3>
+          <img src="images/why-choose-migrantService/1.png" alt="" />
+        </div>
+        <div class="why-choose-migrantService-content-card">
+          <h3 class="text-xl bold700">Verified job offers only</h3>
+          <img src="images/why-choose-migrantService/2.png" alt="" />
+        </div>
+        <div class="why-choose-migrantService-content-card">
+          <h3 class="text-xl bold700">Official contracts</h3>
+          <img src="images/why-choose-migrantService/3.png" alt="" />
+        </div>
+        <div class="why-choose-migrantService-content-card">
+          <h3 class="text-xl bold700">Full assistance at all stages</h3>
+          <img src="images/why-choose-migrantService/4.png" alt="" />
+        </div>
+        <div class="why-choose-migrantService-content-card">
+          <h3 class="text-xl bold700">Data confidentiality</h3>
+          <img src="images/why-choose-migrantService/5.png" alt="" />
+        </div>
+        <div class="why-choose-migrantService-content-card">
+          <h3 class="text-xl bold700">Payment plans available</h3>
+          <img src="images/why-choose-migrantService/6.png" alt="" />
         </div>
       </div>
-    </section>
-    <section class="employment-assistance">
-      <div class="container-small">
-        <div class="section-header">
-          <h3 class="section-title">
-            What is EU Employment Assistance
-            <span>and Who It’s For</span>
-          </h3>
+    </div>
+  </section>
+  <section class="your-benefits">
+    <div class="container">
+      <div class="your-benefits-content">
+        <div class="your-benefits-content-text">
+          <h3 class="section-title">Your Benefits with EU Employment</h3>
+          <div class="your-benefits-content-cards">
+            <div class="your-benefits-content-card">
+              <img src="images/Your-Benefits/1.svg" alt="" class="your-benefits-content-card-icon" />
+              <p class="text-xl bold600">Legal stay and work in the EU</p>
+            </div>
+            <div class="your-benefits-content-card">
+              <img src="images/Your-Benefits/2.svg" alt="" class="your-benefits-content-card-icon" />
+              <p class="text-xl bold600">Access to trusted employers</p>
+            </div>
+            <div class="your-benefits-content-card">
+              <img src="images/Your-Benefits/3.svg" alt="" class="your-benefits-content-card-icon" />
+              <p class="text-xl bold600">Minimal paperwork for you</p>
+            </div>
+            <div class="your-benefits-content-card">
+              <img src="images/Your-Benefits/4.svg" alt="" class="your-benefits-content-card-icon" />
+              <p class="text-xl bold600">Pathway to residence permits</p>
+            </div>
+          </div>
         </div>
-
-        <div class="employment-assistance-content">
-          <div class="employment-assistance-content-text">
-            <h2 class="text-xl bold700">
-              MigrantService supports foreign nationals in securing legal
-              employment in EU countries.
-            </h2>
-            <h4 class="text-xl bold600">
-              We work with verified agencies and directly with employers under
-              official employment contracts.
-            </h4>
+        <img src="images/Your-Benefits/main.png" alt="" class="your-benefits-content-img" />
+      </div>
+    </div>
+  </section>
+  <section class="road-to-legalize" id="etaps" style="background: #f3f3f3">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-title">How We Help You Get Employed in the EU</h3>
+      </div>
+      <div class="road-to-legalize-top-line">
+        <div class="road-to-legalize-top-line-block"></div>
+        <div class="road-to-legalize-top-line-block"></div>
+        <div class="road-to-legalize-top-line-block"></div>
+        <div class="road-to-legalize-top-line-block"></div>
+      </div>
+      <div class="road-to-legalize-steps">
+        <div class="road-to-legalize-steps-mobile">
+          <div class="road-to-legalize-steps-block">
+            <div class="circle"></div>
+            <h3 class="text-xl">step 1.</h3>
             <p class="text-l">
-              Main destinations include Germany, the Netherlands, Czech
-              Republic, Poland, and Hungary. The service is available for
-              citizens of any country. Job offers require basic knowledge of
-              English or Russian.
+              <span class="bold700">Free consultation and destination selection</span>
             </p>
           </div>
-          <img
-            src="images/employment-assistance/main.png"
-            alt=""
-            class="employment-assistance-content-img"
-          />
+          <div class="road-to-legalize-steps-block">
+            <div class="circle"></div>
+            <h3 class="text-xl">step 2.</h3>
+            <p class="text-l">
+              <span class="bold700">Document preparation and employer verification</span>
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="why-choose-migrantService">
-      <div class="container">
-        <div class="section-header">
-          <h3 class="section-title">
-            Why Choose MigrantService for EU Employment
-          </h3>
-        </div>
-        <div class="why-choose-migrantService-content">
-          <div class="why-choose-migrantService-content-card">
-            <h3 class="text-xl bold700">Personal consultation</h3>
-            <img src="images/why-choose-migrantService/1.png" alt="" />
+        <div class="road-to-legalize-steps-mobile">
+          <div class="road-to-legalize-steps-block">
+            <div class="circle"></div>
+            <h3 class="text-xl">step 3.</h3>
+            <p class="text-l">
+              <span class="bold700">Contract signing and pre-departure guidance</span>
+            </p>
           </div>
-          <div class="why-choose-migrantService-content-card">
-            <h3 class="text-xl bold700">Verified job offers only</h3>
-            <img src="images/why-choose-migrantService/2.png" alt="" />
-          </div>
-          <div class="why-choose-migrantService-content-card">
-            <h3 class="text-xl bold700">Official contracts</h3>
-            <img src="images/why-choose-migrantService/3.png" alt="" />
-          </div>
-          <div class="why-choose-migrantService-content-card">
-            <h3 class="text-xl bold700">Full assistance at all stages</h3>
-            <img src="images/why-choose-migrantService/4.png" alt="" />
-          </div>
-          <div class="why-choose-migrantService-content-card">
-            <h3 class="text-xl bold700">Data confidentiality</h3>
-            <img src="images/why-choose-migrantService/5.png" alt="" />
-          </div>
-          <div class="why-choose-migrantService-content-card">
-            <h3 class="text-xl bold700">Payment plans available</h3>
-            <img src="images/why-choose-migrantService/6.png" alt="" />
+          <div class="road-to-legalize-steps-block">
+            <div class="circle"></div>
+            <h3 class="text-xl">step 4.</h3>
+            <p class="text-l">
+              <span class="bold700">Travel, onboarding, and job start</span>
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <section class="your-benefits">
-      <div class="container">
-        <div class="your-benefits-content">
-          <div class="your-benefits-content-text">
-            <h3 class="section-title">Your Benefits with EU Employment</h3>
-            <div class="your-benefits-content-cards">
-              <div class="your-benefits-content-card">
-                <img
-                  src="images/Your-Benefits/1.svg"
-                  alt=""
-                  class="your-benefits-content-card-icon"
-                />
-                <p class="text-xl bold600">Legal stay and work in the EU</p>
-              </div>
-              <div class="your-benefits-content-card">
-                <img
-                  src="images/Your-Benefits/2.svg"
-                  alt=""
-                  class="your-benefits-content-card-icon"
-                />
-                <p class="text-xl bold600">Access to trusted employers</p>
-              </div>
-              <div class="your-benefits-content-card">
-                <img
-                  src="images/Your-Benefits/3.svg"
-                  alt=""
-                  class="your-benefits-content-card-icon"
-                />
-                <p class="text-xl bold600">Minimal paperwork for you</p>
-              </div>
-              <div class="your-benefits-content-card">
-                <img
-                  src="images/Your-Benefits/4.svg"
-                  alt=""
-                  class="your-benefits-content-card-icon"
-                />
-                <p class="text-xl bold600">Pathway to residence permits</p>
+    </div>
+  </section>
+  <section class="our-clients" id="testimonial">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-title">Real Client Stories</h3>
+      </div>
+      <div class="swiper-slides testimonial"></div>
+      <div class="controls-swiper-slides">
+        <button class="controls-swiper-prev testimonial-control-prev">
+          <img src="images/icons/control-left.svg" alt="" />
+        </button>
+        <div class="indicators-swiper testimonial-indicator"></div>
+        <button class="controls-swiper-next testimonial-control-next">
+          <img src="images/icons/control-right.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="questions">
+    <div class="container-small">
+      <div class="section-header">
+        <h3 class="section-title">
+          Frequently Asked Questions <br />
+          About EU Employment
+        </h3>
+      </div>
+      <div class="accordeon">
+        <div class="accordeon-column">
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="text-l bold600">How long does the process take?</p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
               </div>
             </div>
+            <div class="accordeon-content text-m">
+              Typically between 20 to 30 days, depending on the country.
+            </div>
           </div>
-          <img
-            src="images/Your-Benefits/main.png"
-            alt=""
-            class="your-benefits-content-img"
-          />
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="text-l bold600">What documents are required?</p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-m">
+              Passport, application form, contract, photos, medical
+              certificate — details vary by country.
+            </div>
+          </div>
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="text-l bold600">Do I need to speak the language?</p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-m">
+              Basic English or Russian is usually enough for most positions.
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="road-to-legalize" id="etaps" style="background: #f3f3f3">
-      <div class="container">
-        <div class="section-header">
-          <h3 class="section-title">How We Help You Get Employed in the EU</h3>
-        </div>
-        <div class="road-to-legalize-top-line">
-          <div class="road-to-legalize-top-line-block"></div>
-          <div class="road-to-legalize-top-line-block"></div>
-          <div class="road-to-legalize-top-line-block"></div>
-          <div class="road-to-legalize-top-line-block"></div>
-        </div>
-        <div class="road-to-legalize-steps">
-          <div class="road-to-legalize-steps-mobile">
-            <div class="road-to-legalize-steps-block">
-              <div class="circle"></div>
-              <h3 class="text-xl">step 1.</h3>
-              <p class="text-l">
-                <span class="bold700"
-                  >Free consultation and destination selection</span
-                >
+        <div class="accordeon-column">
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="text-l bold600">What kind of guarantee do I get?</p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-m">
+              You’ll sign an official employment contract. We support you
+              until you start working.
+            </div>
+          </div>
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="text-l bold600">
+                Can I complete everything remotely?
               </p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
             </div>
-            <div class="road-to-legalize-steps-block">
-              <div class="circle"></div>
-              <h3 class="text-xl">step 2.</h3>
-              <p class="text-l">
-                <span class="bold700"
-                  >Document preparation and employer verification</span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="road-to-legalize-steps-mobile">
-            <div class="road-to-legalize-steps-block">
-              <div class="circle"></div>
-              <h3 class="text-xl">step 3.</h3>
-              <p class="text-l">
-                <span class="bold700"
-                  >Contract signing and pre-departure guidance</span
-                >
-              </p>
-            </div>
-            <div class="road-to-legalize-steps-block">
-              <div class="circle"></div>
-              <h3 class="text-xl">step 4.</h3>
-              <p class="text-l">
-                <span class="bold700">Travel, onboarding, and job start</span>
-              </p>
+            <div class="accordeon-content text-m">
+              Yes. All paperwork and communication are handled online.
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="our-clients" id="testimonial">
-      <div class="container">
-        <div class="section-header">
-          <h3 class="section-title">Real Client Stories</h3>
+    </div>
+  </section>
+  <section class="how-much">
+    <div class="container-small">
+      <div class="how-much-block">
+        <div class="how-much-text">
+          <h3 class="text-xxl bold700" style="text-transform: uppercase;">How Much Does EU Employment Assistance Cost?</h3>
+          <p class="text-l bold600">The cost ranges from €1300 to €2300, depending on the destination and program.
+            Full payment is due before the invitation letter is issued.
+            We do not handle visa applications in your country of residence.</p>
         </div>
-        <div class="swiper-slides testimonial"></div>
-        <div class="controls-swiper-slides">
-          <button class="controls-swiper-prev testimonial-control-prev">
-            <img src="images/icons/control-left.svg" alt="" />
-          </button>
-          <div class="indicators-swiper testimonial-indicator"></div>
-          <button class="controls-swiper-next testimonial-control-next">
-            <img src="images/icons/control-right.svg" alt="" />
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="questions">
-      <div class="container-small">
-        <div class="section-header">
-          <h3 class="section-title">
-            Frequently Asked Questions <br />
-            About EU Employment
-          </h3>
-        </div>
-        <div class="accordeon">
-          <div class="accordeon-column">
-            <div class="accordeon-item">
-              <div class="accordeon-item-top-button">
-                <p class="text-l bold600">How long does the process take?</p>
-                <div class="icon">
-                  <span class="horizontal"></span>
-                  <span class="vertical"></span>
-                </div>
-              </div>
-              <div class="accordeon-content text-m">
-                Typically between 20 to 30 days, depending on the country.
-              </div>
-            </div>
-            <div class="accordeon-item">
-              <div class="accordeon-item-top-button">
-                <p class="text-l bold600">What documents are required?</p>
-                <div class="icon">
-                  <span class="horizontal"></span>
-                  <span class="vertical"></span>
-                </div>
-              </div>
-              <div class="accordeon-content text-m">
-                Passport, application form, contract, photos, medical
-                certificate — details vary by country.
-              </div>
-            </div>
-            <div class="accordeon-item">
-              <div class="accordeon-item-top-button">
-                <p class="text-l bold600">Do I need to speak the language?</p>
-                <div class="icon">
-                  <span class="horizontal"></span>
-                  <span class="vertical"></span>
-                </div>
-              </div>
-              <div class="accordeon-content text-m">
-                Basic English or Russian is usually enough for most positions.
-              </div>
-            </div>
-          </div>
-          <div class="accordeon-column">
-            <div class="accordeon-item">
-              <div class="accordeon-item-top-button">
-                <p class="text-l bold600">What kind of guarantee do I get?</p>
-                <div class="icon">
-                  <span class="horizontal"></span>
-                  <span class="vertical"></span>
-                </div>
-              </div>
-              <div class="accordeon-content text-m">
-                You’ll sign an official employment contract. We support you
-                until you start working.
-              </div>
-            </div>
-            <div class="accordeon-item">
-              <div class="accordeon-item-top-button">
-                <p class="text-l bold600">
-                  Can I complete everything remotely?
-                </p>
-                <div class="icon">
-                  <span class="horizontal"></span>
-                  <span class="vertical"></span>
-                </div>
-              </div>
-              <div class="accordeon-content text-m">
-                Yes. All paperwork and communication are handled online.
-              </div>
-            </div>
+        <div class="how-much-advantages">
+          <h2 class="text-xl bold700" style="text-transform: uppercase;">Advantages of working</h2>
+          <div class="how-much-advantages-column">
+            <p class="how-much-advantages-column-card bold600 text-l">Free consultation</p>
+            <p class="how-much-advantages-column-card bold600 text-l">Individual pricing</p>
+            <p class="how-much-advantages-column-card bold600 text-l">Up to 6-month payment plans</p>
           </div>
         </div>
       </div>
-    </section>
-    <section class="our-guarantees">
-      <div class="container">
-        <div class="section-header">
-          <h3 class="section-title">Our Guarantees</h3>
+      <div class="how-much-button text-xl bold700 openModal">Get a Quote</div>
+    </div>
+  </section>
+  <section class="our-guarantees" >
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-title">Our Guarantees</h3>
+      </div>
+      <div class="our-guarantees-cards">
+        <div class="our-guarantees-card">
+          <img src="images/our-guarantees/1.svg" alt="" />
+          <h3 class="text-l bold700">Official</h3>
+          <h4 class="text-l">employer contracts</h4>
         </div>
-        <div class="our-guarantees-cards">
-          <div class="our-guarantees-card">
-            <img src="images/our-guarantees/1.svg" alt="" />
-            <h3 class="text-l bold700">Official</h3>
-            <h4 class="text-l">employer contracts</h4>
+        <div class="our-guarantees-card">
+          <img src="images/our-guarantees/2.svg" alt="" />
+          <h3 class="text-l bold700">GDPR-compliant</h3>
+          <h4 class="text-l">data protection</h4>
+        </div>
+        <div class="our-guarantees-card">
+          <img src="images/our-guarantees/3.svg" alt="" />
+          <h3 class="text-l bold700">Support</h3>
+          <h4 class="text-l">through job start</h4>
+        </div>
+        <div class="our-guarantees-card">
+          <img src="images/our-guarantees/4.svg" alt="" />
+          <h3 class="text-l bold700">consultation</h3>
+          <h4 class="text-l">Free consultation</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-MigrantService">
+    <div class="container-small">
+      <div class="about-MigrantService-text">
+        <h3 class="section-title">About MigrantService</h3>
+        <p class="text-xl">Since 2016, we’ve helped clients secure legal residence and employment across the EU. Over
+          500 successful cases. We operate officially and only with trusted partners.</p>
+      </div>
+      <img src="/images/about-MigrantService/main.png" alt="" class="about-MigrantService-img" />
+    </div>
+  </section>
+  <section class="legalize-near">
+    <div class="container-small">
+      <div class="legalize-block">
+        <h3 class="text-xxxl bold700">Ready to Start Working in the EU?</h3>
+        <h4 class="text-xl bold600">
+          Send us your request — we’ll contact you within 24 hours.
+        </h4>
+        <div class="get-consult bold700 openModal">
+          Get a Free Consultation
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container footer">
+      <div class="footer-left">
+        <img src="/images/Footer/logo.svg" alt="" />
+        <div class="footer-left-columns">
+          <div class="footer-left-column">
+            <a href="#services" class="text-m bold600">Service</a>
+            <a href="#etaps" class="text-m bold600">Work stages</a>
+            <a href="#why-choose" class="text-m bold600">About us</a>
+            <a href="#testimonial" class="text-m bold600">Reviews</a>
           </div>
-          <div class="our-guarantees-card">
-            <img src="images/our-guarantees/2.svg" alt="" />
-            <h3 class="text-l bold700">GDPR-compliant</h3>
-            <h4 class="text-l">data protection</h4>
-          </div>
-          <div class="our-guarantees-card">
-            <img src="images/our-guarantees/3.svg" alt="" />
-            <h3 class="text-l bold700">Support</h3>
-            <h4 class="text-l">through job start</h4>
-          </div>
-          <div class="our-guarantees-card">
-            <img src="images/our-guarantees/4.svg" alt="" />
-            <h3 class="text-l bold700">consultation</h3>
-            <h4 class="text-l">Free consultation</h4>
+          <div class="footer-left-column">
+            <p class="text-m bold700">Contact info</p>
+            <a href="tel:+48795664765" class="text-m bold600 contacts-flex"><img src="images/Footer/Phone.svg" alt="" />
+              <p>+ 4879 566 4765</p>
+            </a>
+            <a href="mailto:info@imigrant-service.com" class="text-m bold600 contacts-flex"><img
+                src="images/Footer/Mail.svg" alt="" />
+              <p>info@imigrant-service.com</p>
+            </a>
+            <a href="#" class="text-m bold600 contacts-flex"><img src="images/Footer/House.svg" alt="" />
+              <p>Address</p>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="about-MigrantService">
-      <div class="container-small">
-        <div class="about-MigrantService-text">
-          <h3 class="section-title">About MigrantService</h3>
-          <p class="text-xl">Since 2016, we’ve helped clients secure legal residence and employment across the EU. Over 500 successful cases. We operate officially and only with trusted partners.</p>
-        </div>
-        <img
-          src="/images/about-MigrantService/main.png"
-          alt=""
-          class="about-MigrantService-img"
-        />
-      </div>
-    </section>
-    <section class="legalize-near">
-      <div class="container-small">
-        <div class="legalize-block">
-          <h3 class="text-xxxl bold700">Ready to Start Working in the EU?</h3>
-          <h4 class="text-xl bold600">
-            Send us your request — we’ll contact you within 24 hours.
-          </h4>
-          <div class="get-consult bold700 openModal">
-            Get a Free Consultation
-          </div>
-        </div>
-      </div>
-    </section>
-    <section></section>
-    <footer>
-      <div class="container footer">
-        <div class="footer-left">
-          <img src="/images/Footer/logo.svg" alt="" />
-          <div class="footer-left-columns">
-            <div class="footer-left-column">
-              <a href="#services" class="text-m bold600">Service</a>
-              <a href="#etaps" class="text-m bold600">Work stages</a>
-              <a href="#why-choose" class="text-m bold600">About us</a>
-              <a href="#testimonial" class="text-m bold600">Reviews</a>
-            </div>
-            <div class="footer-left-column">
-              <p class="text-m bold700">Contact info</p>
-              <a href="tel:+48795664765" class="text-m bold600 contacts-flex"
-                ><img src="images/Footer/Phone.svg" alt="" />
-                <p>+ 4879 566 4765</p>
-              </a>
-              <a
-                href="mailto:info@imigrant-service.com"
-                class="text-m bold600 contacts-flex"
-                ><img src="images/Footer/Mail.svg" alt="" />
-                <p>info@imigrant-service.com</p>
-              </a>
-              <a href="#" class="text-m bold600 contacts-flex"
-                ><img src="images/Footer/House.svg" alt="" />
-                <p>Address</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-right">
-          <div class="footer-right-socials">
-            <!-- <a href="https://wa.me/48795664765">
+      <div class="footer-right">
+        <div class="footer-right-socials">
+          <!-- <a href="https://wa.me/48795664765">
             <img src="/images/Footer/InstagramLogo.svg" alt="" class="footer-right-socials-icon">
           </a>
           <a href="https://wa.me/48795664765">
             <img src="/images/Footer/ViberLogo.svg" alt="" class="footer-right-socials-icon">
           </a> -->
-            <a href="https://wa.me/48795664765">
-              <img
-                src="/images/Footer/WhatsappLogo.svg"
-                alt=""
-                class="footer-right-socials-icon"
-              />
-            </a>
-            <!-- <a href="https://wa.me/48795664765">
+          <a href="https://wa.me/48795664765">
+            <img src="/images/Footer/WhatsappLogo.svg" alt="" class="footer-right-socials-icon" />
+          </a>
+          <!-- <a href="https://wa.me/48795664765">
             <img src="/images/Footer/TelegramLogo.svg" alt="" class="footer-right-socials-icon">
           </a> -->
-          </div>
-          <div class="footer-right-opt">
-            <a href="#" class="text-m">Privacy Policy</a>
-            <a href="#" class="text-m">Terms of Service</a>
-          </div>
+        </div>
+        <div class="footer-right-opt">
+          <a href="#" class="text-m">Privacy Policy</a>
+          <a href="#" class="text-m">Terms of Service</a>
         </div>
       </div>
-    </footer>
-    <script src="employmentPage/employment.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="employmentPage/employment.js"></script>
+</body>
+
 </html>

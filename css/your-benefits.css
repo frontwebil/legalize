@@ -37,3 +37,48 @@
 }
 .your-benefits-content-img {
 }
+
+@media only screen and (max-width: 1300px) {
+  .your-benefits-content-cards {
+    gap: 10px;
+  }
+  .your-benefits-content-card {
+    max-width: 360px;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  .your-benefits{
+    padding: 60px 0;
+  }
+  .your-benefits-content-img {
+    display: none;
+  }
+  .your-benefits-content {
+    display: flex;
+    justify-content: center;
+  }
+  .your-benefits-content-cards {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 850px;
+    justify-content: center;
+  }
+  .your-benefits-content-text h3{
+    text-align: center;
+    margin: 0 auto
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .your-benefits-content-cards{
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .your-benefits-content-card{
+    width: 100%;
+    max-width: 100%;
+  }
+}

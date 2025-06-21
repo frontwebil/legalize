@@ -12,13 +12,35 @@
   flex-direction: column;
   gap: 12px;
 }
-.employment-assistance-content-text h2{
+.employment-assistance-content-text h2 {
   text-transform: uppercase;
 }
-.employment-assistance-content-text p{
+.employment-assistance-content-text p {
   padding-top: 12px;
 }
 .employment-assistance-content-img {
   max-width: 415px;
   object-fit: cover;
+}
+
+.employment-assistance-content-img-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .employment-assistance-content {
+    flex-direction: column-reverse;
+  }
+  .employment-assistance-content-text {
+    max-width: 700px;
+  }
+  .employment-assistance {
+    padding: 60px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .employment-assistance-content-img {
+    max-width: 100%;
+  }
 }

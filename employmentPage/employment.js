@@ -27,7 +27,7 @@ let SLIDES_PER_PAGETestimonial = 2;
 if (screenWidth <= 1265) {
   SLIDES_PER_PAGETestimonial = 2;
 }
-if (screenWidth <= 850) {
+if (screenWidth <= 800) {
   SLIDES_PER_PAGETestimonial = 1;
 }
 
