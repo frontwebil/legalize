@@ -9,6 +9,7 @@
   gap: 20px;
 }
 .our-service-block {
+  position: relative;
   max-width: 413px;
   width: 100%;
   padding: 15px 18px;
@@ -20,6 +21,15 @@
   align-items: flex-start;
   transition: scale ease 0.3s;
 }
+
+.arrow-go-card{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 18px;
+  /* border-bottom: 2px solid rgba(233, 84, 4, 1); */
+}
+
 .our-service-block:hover {
   scale: 1.05;
 }
