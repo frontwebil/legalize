@@ -13,7 +13,8 @@
   max-width: 413px;
   width: 100%;
   padding: 15px 18px;
-  box-shadow: 0 4px 4px -1px rgba(12, 12, 13, 0.05),
+  box-shadow:
+    0 4px 4px -1px rgba(12, 12, 13, 0.05),
     0 4px 4px -1px rgba(12, 12, 13, 0.1);
   background: #fafafa;
   display: flex;
@@ -22,7 +23,7 @@
   transition: scale ease 0.3s;
 }
 
-.arrow-go-card{
+.arrow-go-card {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -73,10 +74,13 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .our-service{
+  .our-service {
     padding: 50px 0;
   }
-.our-service-block{
-  max-width: 100%;
-}
+  .our-service-block {
+    max-width: 100%;
+  }
+  .arrow-go-card {
+    width: 24px;
+  }
 }
