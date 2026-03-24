@@ -303,7 +303,7 @@ document
     const inputContents = [
       `<b>Заявка на консультацию</b>`,
       `Имя: ${this.name.value}`,
-      `Почта: ${this.Email.value}`,
+      `Номер телефона: ${this.Phone.value}`,
       `Запрос: ${this.request.value}`,
     ];
     let message = inputContents.join("\n");
@@ -321,7 +321,7 @@ document
     })
       .then((res) => {
         this.name.value = "";
-        this.Email.value = "";
+        this.Phone.value = "";
         this.request.value = "";
         modalTahnkYou.classList.add("active");
         modal.classList.remove("active");
