@@ -90,6 +90,7 @@ footer * {
   }
 
   .footer-left-columns {
+    flex-direction: column-reverse;
     display: flex;
     gap: 20px;
   }

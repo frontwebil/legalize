@@ -170,4 +170,16 @@ a {
   .service-group-title {
     font-size: 20px;
   }
+
+  .service-title {
+    font-size: 32px;
+  }
+
+  .service-description {
+    font-size: 16px;
+  }
+
+  .service-list-section{
+    padding: 24px 0;
+  }
 }

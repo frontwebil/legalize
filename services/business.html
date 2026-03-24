@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бизнес и компании</title>
+    <link rel="stylesheet" href="../css/services-page.css" />
+  </head>
+  <body>
+    <div class="modalConsultating" id="modalConsultating">
+      <div class="modalConsultating-container">
+        <div class="modalConsultating-top">
+          <h2 class="text-xxl bold700">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</h2>
+          <img
+            src="/images/icons/close.svg"
+            alt=""
+            class="cart-menu-top-image"
+            id="closeModalConsultating"
+          />
+        </div>
+        <p class="text-l">
+          Оставьте заявку, и наш менеджер свяжется с вами на протяжении 24
+          часов.
+        </p>
+        <div class="form-container">
+          <form id="modalForm" class="modalForm">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="name" class="fs-s bold700">Имя</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Введите ваше имя"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="fs-s bold700">Номер телефона</label>
+                <input
+                  type="tel"
+                  id="Phone"
+                  name="phone"
+                  placeholder="+38 (000) 000-00-00"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="request" class="fs-s bold700">Запрос</label>
+              <textarea
+                id="request"
+                name="request"
+                placeholder="Кратко опишите, с каким вопросом вы обращаетесь"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="modalButtonCons">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modalTahnkYou" id="modalTahnkYou">
+      <div class="modalTahnkYou-container">
+        <h2 class="text-xxl bold700">ЗАЯВКА УСПЕШНО ОТПРАВЛЕНА</h2>
+        <p class="text-l">
+          Спасибо! Мы свяжемся с вами на протяжении 24 часов.
+        </p>
+        <a href="/" class="modalButtonCons">Закрыть</a>
+      </div>
+    </div>
+
+    <main class="service-page">
+      <section class="service-hero">
+        <div class="container">
+          <a href="../index.html#services" class="service-back"
+            >← Назад к услугам</a
+          >
+
+          <div class="service-hero-content">
+            <span class="service-label">Услуги</span>
+            <h1 class="service-title">Бизнес и компании</h1>
+            <p class="service-description">
+              Помогаем открыть, купить и сопровождать бизнес в Европе — от
+              регистрации до бухгалтерии и лицензирования.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-list-section">
+        <div class="container">
+          <h2 class="service-section-title">Что входит</h2>
+
+          <div class="service-groups">
+            <div class="service-group">
+              <div class="service-group-head">
+                <div class="service-group-icon">🏢</div>
+                <h3 class="service-group-title">Регистрация бизнеса</h3>
+              </div>
+
+              <div class="service-group-list">
+                <div class="service-group-item">Регистрация компаний</div>
+                <div class="service-group-item">Регистрация Sp. z o.o.</div>
+                <div class="service-group-item">Регистрация JDG</div>
+                <div class="service-group-item">Открытие бизнеса под ВНЖ</div>
+              </div>
+            </div>
+
+            <div class="service-group">
+              <div class="service-group-head">
+                <div class="service-group-icon">📊</div>
+                <h3 class="service-group-title">Сопровождение</h3>
+              </div>
+
+              <div class="service-group-list">
+                <div class="service-group-item">Бухгалтерия</div>
+                <div class="service-group-item">Аудит</div>
+                <div class="service-group-item">Юридическое сопровождение</div>
+              </div>
+            </div>
+
+            <div class="service-group">
+              <div class="service-group-head">
+                <div class="service-group-icon">✅</div>
+                <h3 class="service-group-title">Лицензии</h3>
+              </div>
+
+              <div class="service-group-list">
+                <div class="service-group-item">Лицензирование</div>
+                <div class="service-group-item">
+                  Подготовка документов под лицензии
+                </div>
+              </div>
+            </div>
+
+            <div class="service-group">
+              <div class="service-group-head">
+                <div class="service-group-icon">🔑</div>
+                <h3 class="service-group-title">Готовые компании</h3>
+              </div>
+
+              <div class="service-group-list">
+                <div class="service-group-item">Подбор готовых компаний</div>
+                <div class="service-group-item">
+                  Продажа действующих компаний
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="legalize-near">
+        <div class="container-small">
+          <div class="legalize-block">
+            <h3 class="text-xxxl bold700">
+              Бизнес в Европе — проще с правильным сопровождением
+            </h3>
+            <h4 class="text-xl bold600">
+              Оставьте заявку — поможем выбрать лучший формат компании
+            </h4>
+            <div class="get-consult bold700 openModal">
+              Получить бесплатную консультацию
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer">
+        <div class="footer-left">
+          <img src="/images/Footer/logo.svg" alt="" />
+          <div class="footer-left-columns">
+            <div class="footer-left-column">
+              <a href="#services" class="text-m bold600">Услуги</a>
+              <a href="#etaps" class="text-m bold600">Этапы работы</a>
+              <a href="#why-choose" class="text-m bold600">Про нас</a>
+              <a href="#testimonial" class="text-m bold600">Отзывы</a>
+            </div>
+            <div class="footer-left-column">
+              <p class="text-m bold700">Контакты</p>
+              <a href="tel:+48795664765" class="text-m bold600 contacts-flex"
+                ><img src="/images/Footer/Phone.svg" alt="" />
+                <p>+ 4879 566 4765</p>
+              </a>
+              <a
+                href="mailto:info@imigrant-service.com"
+                class="text-m bold600 contacts-flex"
+                ><img src="/images/Footer/Mail.svg" alt="" />
+                <p>info@imigrant-service.com</p>
+              </a>
+              <a href="#" class="text-m bold600 contacts-flex"
+                ><img src="/images/Footer/House.svg" alt="" />
+                <p>Адрес</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-socials">
+            <a href="https://wa.me/48795664765">
+              <img
+                src="/images/Footer/WhatsappLogo.svg"
+                alt=""
+                class="footer-right-socials-icon"
+              />
+            </a>
+          </div>
+          <div class="footer-right-opt">
+            <a href="#" class="text-m">Политика конфиденциальности</a>
+            <a href="#" class="text-m">Условия использования</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="services.js"></script>
+  </body>
+</html>
