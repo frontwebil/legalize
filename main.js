@@ -2,35 +2,25 @@ const screenWidth = window.screen.width;
 
 const testimonial = [
   {
-    text: "Обратился по рекомендации друга. Ребята всё чётко объяснили, помогли собрать документы и уже через два месяца я получил ВНЖ в Польше. Без лишней бюрократии и нервов. Спасибо за поддержку на каждом этапе!",
+    text: "Обратился по рекомендации друга. Ребята всё чётко объяснили, помогли собрать документы и сопровождали на каждом этапе. Процесс прошёл спокойно, без лишней бюрократии и нервов. Спасибо за поддержку!",
     img: "/images/our-clients/1.png",
-    title: "Алексей Ковальчук , 35 лет",
-    description: "ВНЖ в Польше за 2 месяца через бизнес-иммиграцию.",
+    title: "Алексей Ковальчук, 35 лет",
+    description: "Получил ВНЖ в Польше за 7 месяцев через бизнес-иммиграцию.",
   },
   {
-    text: "Очень рад, что выбрал именно эту компанию. У меня был сложный случай, но специалисты нашли оптимальное решение и оформили всё легально. Теперь я живу и работаю в Словакии официально.",
+    text: "Очень рад, что выбрал именно эту компанию. У меня был сложный случай, но специалисты нашли оптимальное решение и оформили всё легально. Сейчас живу и работаю в Словакии официально.",
     img: "/images/our-clients/2.png",
-    title: "Игорь Демидов , 42 года",
-    description: "ВНЖ в Польше за 2 месяца через бизнес-иммиграцию.",
+    title: "Игорь Демидов, 42 года",
+    description:
+      "Оформление ВНЖ в Словакии заняло 8 месяцев с полным сопровождением.",
   },
   {
-    text: "Оформление ВНЖ в Чехии прошло быстро и без подводных камней. Особенно понравилось, что всегда были на связи и заранее предупреждали обо всех нюансах. Рекомендую всем, кто хочет уехать по-человечески.",
+    text: "Оформление ВНЖ в Чехии прошло без подводных камней. Всегда были на связи и заранее предупреждали обо всех нюансах. Всё прозрачно и по делу — рекомендую.",
     img: "/images/our-clients/3.png",
-    title: "Сергей Антонов , 29 лет",
-    description: "ВНЖ в Польше за 2 месяца через бизнес-иммиграцию.",
+    title: "Сергей Антонов, 29 лет",
+    description:
+      "Получил ВНЖ в Чехии за 7 месяцев через предпринимательскую деятельность.",
   },
-  // {
-  //   text:"Мне помогли не только с документами, но и с открытием банковского счёта, жильём и переводами. Комплексный подход чувствуется. Сейчас уже обживаюсь в Румынии, всё благодаря вам.",
-  //   img:'/images/our-clients/1.png',
-  //   title:'Владимир Ткаченко , 50 лет',
-  //   description:"ВНЖ в Польше за 2 месяца через бизнес-иммиграцию."
-  // },
-  // {
-  //   text:"Честно говоря, не ожидал такого уровня сервиса. Приятно удивлён. Легализация в Венгрии прошла быстро, постоянно получал обновления по статусу дела. Спасибо команде за профессионализм и честность.",
-  //   img:'/images/our-clients/1.png',
-  //   title:'Максим Соловей , 31 год',
-  //   description:"ВНЖ в Польше за 2 месяца через бизнес-иммиграцию."
-  // },
 ];
 
 let SLIDES_PER_PAGETestimonial = 3;
@@ -46,13 +36,13 @@ let currentSlideIndexTestimonial = 0;
 function initTestimonialSlider() {
   const slidesContainerTestimonial = document.querySelector(".testimonial");
   const buttonPrevTestimonial = document.querySelector(
-    ".testimonial-control-prev"
+    ".testimonial-control-prev",
   );
   const buttonNextTestimonial = document.querySelector(
-    ".testimonial-control-next"
+    ".testimonial-control-next",
   );
   const indicatorsTestimonial = document.querySelector(
-    ".testimonial-indicator"
+    ".testimonial-indicator",
   );
 
   function createTestimonialBlock(person) {
@@ -77,7 +67,7 @@ function initTestimonialSlider() {
 
   function updateSlidesTestimonial() {
     const totalSlides = Math.ceil(
-      testimonial.length / SLIDES_PER_PAGETestimonial
+      testimonial.length / SLIDES_PER_PAGETestimonial,
     );
     const currentSlide = document.querySelector(".swiper-slide.active");
 
@@ -88,7 +78,7 @@ function initTestimonialSlider() {
     const startIdx = currentSlideIndexTestimonial * SLIDES_PER_PAGETestimonial;
     const endIdx = Math.min(
       startIdx + SLIDES_PER_PAGETestimonial,
-      testimonial.length
+      testimonial.length,
     );
 
     const slideContent = testimonial
@@ -174,7 +164,7 @@ function initTestimonialSlider() {
 
   function nextSlideTestimonial() {
     const totalSlides = Math.ceil(
-      testimonial.length / SLIDES_PER_PAGETestimonial
+      testimonial.length / SLIDES_PER_PAGETestimonial,
     );
     if (currentSlideIndexTestimonial < totalSlides - 1) {
       currentSlideIndexTestimonial++;
@@ -222,7 +212,7 @@ function initTestimonialSlider() {
     if (clickedIndicator.classList.contains("indicator-swiper")) {
       currentSlideIndexTestimonial = parseInt(
         clickedIndicator.dataset.testimonial,
-        10
+        10,
       );
       updateSlidesTestimonial();
     }
@@ -230,15 +220,15 @@ function initTestimonialSlider() {
 
   slidesContainerTestimonial.addEventListener(
     "touchstart",
-    handleTouchStartTestimonial
+    handleTouchStartTestimonial,
   );
   slidesContainerTestimonial.addEventListener(
     "touchmove",
-    handleTouchMoveTestimonial
+    handleTouchMoveTestimonial,
   );
   slidesContainerTestimonial.addEventListener(
     "touchend",
-    handleTouchEndTestimonial
+    handleTouchEndTestimonial,
   );
 
   // Initial render
@@ -248,7 +238,7 @@ function initTestimonialSlider() {
 document.addEventListener("DOMContentLoaded", initTestimonialSlider);
 
 const AccordeonTopButton = document.querySelectorAll(
-  ".accordeon-item-top-button"
+  ".accordeon-item-top-button",
 );
 
 AccordeonTopButton.forEach((el) => {
